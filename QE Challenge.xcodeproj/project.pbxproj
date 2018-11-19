@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E586C99021A3496D009390DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586C98F21A3496D009390DA /* AppDelegate.swift */; };
-		E586C99221A3496D009390DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586C99121A3496D009390DA /* ViewController.swift */; };
-		E586C99521A3496D009390DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E586C99321A3496D009390DA /* Main.storyboard */; };
 		E586C99721A3496E009390DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E586C99621A3496E009390DA /* Assets.xcassets */; };
 		E586C99A21A3496E009390DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E586C99821A3496E009390DA /* LaunchScreen.storyboard */; };
 		E586C9A521A3496E009390DA /* QE_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586C9A421A3496E009390DA /* QE_ChallengeTests.swift */; };
 		E586C9B021A3496E009390DA /* QE_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586C9AF21A3496E009390DA /* QE_ChallengeUITests.swift */; };
+		E586C9C221A34A34009390DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586C9C021A34A34009390DA /* LoginViewController.swift */; };
+		E586C9C321A34A34009390DA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E586C9C121A34A34009390DA /* LoginViewController.xib */; };
+		E586C9C521A34B40009390DA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E586C9C421A34B40009390DA /* Default-568h@2x.png */; };
+		E586C9C721A35C79009390DA /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586C9C621A35C79009390DA /* UserDefaultsKeys.swift */; };
+		E586C9CA21A35CE3009390DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586C9C821A35CE3009390DA /* HomeViewController.swift */; };
+		E586C9CB21A35CE3009390DA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E586C9C921A35CE3009390DA /* HomeViewController.xib */; };
+		E586C9CE21A36939009390DA /* YouWinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E586C9CC21A36939009390DA /* YouWinViewController.swift */; };
+		E586C9CF21A36939009390DA /* YouWinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E586C9CD21A36939009390DA /* YouWinViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +42,6 @@
 /* Begin PBXFileReference section */
 		E586C98C21A3496D009390DA /* QE Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QE Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E586C98F21A3496D009390DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E586C99121A3496D009390DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E586C99421A3496D009390DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E586C99621A3496E009390DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E586C99921A3496E009390DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E586C99B21A3496E009390DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		E586C9AB21A3496E009390DA /* QE ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QE ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E586C9AF21A3496E009390DA /* QE_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QE_ChallengeUITests.swift; sourceTree = "<group>"; };
 		E586C9B121A3496E009390DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E586C9C021A34A34009390DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E586C9C121A34A34009390DA /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E586C9C421A34B40009390DA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E586C9C621A35C79009390DA /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		E586C9C821A35CE3009390DA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E586C9C921A35CE3009390DA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E586C9CC21A36939009390DA /* YouWinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouWinViewController.swift; sourceTree = "<group>"; };
+		E586C9CD21A36939009390DA /* YouWinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouWinViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,10 @@
 		E586C98E21A3496D009390DA /* QE Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				E586C9C621A35C79009390DA /* UserDefaultsKeys.swift */,
 				E586C98F21A3496D009390DA /* AppDelegate.swift */,
-				E586C99121A3496D009390DA /* ViewController.swift */,
-				E586C99321A3496D009390DA /* Main.storyboard */,
-				E586C99621A3496E009390DA /* Assets.xcassets */,
-				E586C99821A3496E009390DA /* LaunchScreen.storyboard */,
-				E586C99B21A3496E009390DA /* Info.plist */,
+				E586C9D021A37365009390DA /* View Controllers */,
+				E586C9BF21A34A17009390DA /* Resources */,
 			);
 			path = "QE Challenge";
 			sourceTree = "<group>";
@@ -123,6 +133,30 @@
 				E586C9B121A3496E009390DA /* Info.plist */,
 			);
 			path = "QE ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		E586C9BF21A34A17009390DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E586C9C421A34B40009390DA /* Default-568h@2x.png */,
+				E586C99621A3496E009390DA /* Assets.xcassets */,
+				E586C99821A3496E009390DA /* LaunchScreen.storyboard */,
+				E586C99B21A3496E009390DA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E586C9D021A37365009390DA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E586C9C021A34A34009390DA /* LoginViewController.swift */,
+				E586C9C121A34A34009390DA /* LoginViewController.xib */,
+				E586C9C821A35CE3009390DA /* HomeViewController.swift */,
+				E586C9C921A35CE3009390DA /* HomeViewController.xib */,
+				E586C9CC21A36939009390DA /* YouWinViewController.swift */,
+				E586C9CD21A36939009390DA /* YouWinViewController.xib */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E586C99A21A3496E009390DA /* LaunchScreen.storyboard in Resources */,
+				E586C9C521A34B40009390DA /* Default-568h@2x.png in Resources */,
+				E586C9CB21A35CE3009390DA /* HomeViewController.xib in Resources */,
 				E586C99721A3496E009390DA /* Assets.xcassets in Resources */,
-				E586C99521A3496D009390DA /* Main.storyboard in Resources */,
+				E586C9C321A34A34009390DA /* LoginViewController.xib in Resources */,
+				E586C9CF21A36939009390DA /* YouWinViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E586C99221A3496D009390DA /* ViewController.swift in Sources */,
+				E586C9C221A34A34009390DA /* LoginViewController.swift in Sources */,
 				E586C99021A3496D009390DA /* AppDelegate.swift in Sources */,
+				E586C9C721A35C79009390DA /* UserDefaultsKeys.swift in Sources */,
+				E586C9CA21A35CE3009390DA /* HomeViewController.swift in Sources */,
+				E586C9CE21A36939009390DA /* YouWinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E586C99321A3496D009390DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E586C99421A3496D009390DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E586C99821A3496E009390DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,7 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 895QHL4VV3;
-				INFOPLIST_FILE = "QE Challenge/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/QE Challenge/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 895QHL4VV3;
-				INFOPLIST_FILE = "QE Challenge/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/QE Challenge/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
