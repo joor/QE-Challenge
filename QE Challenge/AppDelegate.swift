@@ -35,7 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window.makeKeyAndVisible()
     self.window = window
     return true
-  }  
+  }
+  
+  func applicationWillResignActive(_ application: UIApplication) {
+    exit(0)
+  }
 }
 
 // MARK: - Helpers

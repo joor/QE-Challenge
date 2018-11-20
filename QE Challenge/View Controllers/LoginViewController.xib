@@ -27,6 +27,7 @@
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qy4-3A-VsJ">
                             <rect key="frame" x="0.0" y="21" width="200" height="30"/>
+                            <accessibility key="accessibilityConfiguration" label="Username Field"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="200" id="wfB-g0-p0n"/>
                             </constraints>
@@ -36,12 +37,14 @@
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3k-Nt-wI5">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="21"/>
+                            <accessibility key="accessibilityConfiguration" label="Username Label"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3mN-jg-EZn">
                             <rect key="frame" x="0.0" y="80" width="200" height="30"/>
+                            <accessibility key="accessibilityConfiguration" label="Password Field"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="200" id="9Gu-Yu-PXX"/>
                             </constraints>
@@ -51,6 +54,7 @@
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="065-PT-CbV">
                             <rect key="frame" x="0.0" y="59" width="200" height="21"/>
+                            <accessibility key="accessibilityConfiguration" label="Password Label"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -75,8 +79,9 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fc-hP-O1f">
-                    <rect key="frame" x="168.5" y="617" width="38" height="30"/>
-                    <state key="normal" title="Login"/>
+                    <rect key="frame" x="166.5" y="617" width="42" height="30"/>
+                    <accessibility key="accessibilityConfiguration" label="Log In Button"/>
+                    <state key="normal" title="Log In"/>
                     <connections>
                         <action selector="loginTapped:" destination="-1" eventType="touchUpInside" id="BLy-vu-5mN"/>
                     </connections>
