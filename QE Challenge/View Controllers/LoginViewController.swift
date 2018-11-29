@@ -36,6 +36,9 @@ extension LoginViewController {
     else {
       showIncorrectCredentialsError()
     }
+    
+    usernameField.text = nil
+    passwordField.text = nil
   }
 }
 

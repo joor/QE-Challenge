@@ -42,6 +42,13 @@ class HomeViewController: UIViewController {
     
     valueLabel.text = "\(value)"
   }
+  
+  func reset()
+  {
+    UserDefaults.standard.set(0, forKey: UserDefaultsKeys.currentValue)
+    stepper.value = 0
+    valueLabel.text = "0"
+  }
 }
 
 // MARK: - Helpers
@@ -54,10 +61,7 @@ private extension HomeViewController {
   
   func youWin()
   {
-    UserDefaults.standard.set(0, forKey: UserDefaultsKeys.currentValue)
-    stepper.value = 0
-    valueLabel.text = "0"
-    
     present(YouWinViewController(), animated: true, completion: nil)
+    reset()
   }
 }

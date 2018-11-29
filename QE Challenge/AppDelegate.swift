@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
   
+  private var homeVC: HomeViewController?
+  
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
      let window = UIWindow(frame: UIScreen.main.bounds)
@@ -46,6 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
   var homeViewController: UIViewController {
     let homeVC = HomeViewController()
+    self.homeVC = homeVC
+
     homeVC.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Log Out",
                                                               style: .plain,
                                                               target: self,
@@ -56,14 +60,20 @@ private extension AppDelegate {
   
   @objc func logout()
   {
+    homeVC?.reset()
     UserDefaults.standard.set(false, forKey: UserDefaultsKeys.isLoggedIn)
     
-    let loginVC = LoginViewController()
-    loginVC.onComplete = { [weak self] in
-      UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isLoggedIn)
-      self?.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    if window?.rootViewController is LoginViewController {
+      window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
-    
-    window?.rootViewController?.present(loginVC, animated: true, completion: nil)
+    else {
+      let loginVC = LoginViewController()
+      loginVC.onComplete = { [weak self] in
+        UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isLoggedIn)
+        self?.window?.rootViewController?.dismiss(animated: true, completion: nil)
+      }
+      
+      window?.rootViewController?.present(loginVC, animated: true, completion: nil)
+    }
   }
 }
