@@ -35,12 +35,12 @@ class HomeViewController: UIViewController {
       }
     }
     
+    valueLabel.text = "\(value)"
+
     if value == 10 {
       youWin()
       return
-    }
-    
-    valueLabel.text = "\(value)"
+    }    
   }
   
   func reset()
@@ -61,7 +61,6 @@ private extension HomeViewController {
   
   func youWin()
   {
-    present(YouWinViewController(), animated: true, completion: nil)
-    reset()
+    present(YouWinViewController(), animated: true, completion: { self.reset() })
   }
 }
